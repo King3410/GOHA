@@ -1,0 +1,370 @@
+
+body {
+    background-color: #f8f9fa;
+    margin: 0; /* Remove default margin */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    margin-top: 100px; /* Margin to avoid navbar overlap */
+}
+/* Hide scrollbar for all elements */
+* {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+*::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Navigation bar with green background */
+.navbar {
+    background-color: #007D0C; /* Green background */
+    padding: 15px; /* Padding for the navbar */
+    position: fixed; /* Stick to the top */
+    top: 0;
+    width: 100%;
+    z-index: 1020; /* Ensure navbar is above other content */
+}
+
+/* Navbar brand and link styles */
+.navbar-brand, .nav-link {
+    color: white !important; /* White text */
+}
+
+.navbar-brand {
+    font-size: 20px; /* Font size for brand */
+    text-align: center; /* Center text for better mobile view */
+    
+}
+
+.nav-link {
+    font-size: 16px; /* Font size for links */
+    text-align: center; /* Center links */
+    padding: 10px; /* Padding for better touch targets */
+    margin: 0 10px; /* Add margin for space between links */
+}
+
+/* Logo height */
+/* Default navbar link styles */
+.navbar-nav .nav-link {
+    color: white;
+    font-weight: 500; /* Prevents sudden bold changes */
+    transition: all 0.3s ease-in-out;
+    display: inline-block; /* Prevents shifting */
+}
+
+/* Hover effect for links */
+.navbar-nav .nav-link:hover, 
+.navbar-nav .nav-link.active {  /* Keep the effect on active page */
+    color: #FFD700 !important; /* Gold text */
+    text-decoration: underline; /* Underline */
+    text-shadow: 0px 0px 1px #FFD700; /* Mimic bold effect */
+    transform: scale(1.05); /* Slightly enlarges text */
+}
+
+/* Navbar hover design */
+.bb {
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.bb:hover {
+    color: #FFD700;
+}
+
+/* FOOTER */
+/* Social media links */
+.footer .socials a {
+    display: flex; /* Aligns icon and text properly */
+    align-items: center; /* Keeps icon aligned with text */
+    gap: 8px; /* Adds spacing between icon and text */
+    color: white; /* Default link color */
+    font-weight: 500; /* Prevents sudden bold changes */
+    transition: all 0.3s ease-in-out;
+    text-decoration: none !important; /* Completely removes underline */
+}
+
+/* Hover effect (No underline) */
+.footer .socials a:hover {
+    color: #FFD700 !important; /* Gold text on hover */
+    text-shadow: 0px 0px 1px #FFD700; /* Mimic bold effect */
+    transform: scale(1.05); /* Slightly enlarges text */
+    text-decoration: none !important; /* Ensure underline is never applied */
+}
+.footer {
+    background-color: #007D0C; /* Green background */
+    color: white;
+    padding: 20px;
+    width: 100%;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column; /* Stack rows vertically */
+}
+
+.footer .row {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: space-between; /* Space out sections */
+}
+
+.footer .footer-logo {
+    max-width: 150px; /* Adjust logo size */
+    margin-right: 20px; /* Space between logo and text */
+}
+
+.footer .section {
+    flex: 1; /* Allow sections to grow */
+    min-width: 150px; /* Minimum width for smaller screens */
+    margin: 10px; /* Space between sections */
+}
+
+.footer .section h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.footer .section p, 
+.footer .section a {
+    margin: 5px 0;
+    color: white;
+    text-decoration: none; /* Remove underline */
+}
+
+.footer .section a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.footer .socials {
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+}
+
+.footer .socials a {
+    margin-top: 5px; /* Add top margin for spacing */
+}
+
+.footer .divider {
+    border-top: 1px solid white;
+    margin: 20px 0; /* Space above and below the divider */
+    width: 100%; /* Full width for the divider */
+}
+.socials p {
+    margin: 0; /* Remove top and bottom margins */
+}
+
+.socials a {
+    color: white; /* Adjust link color as needed */
+    text-decoration: none; /* Remove underline */
+}
+
+.socials a:hover {
+    text-decoration: underline; /* Optional: underline on hover */
+}
+.center-margin {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer .row {
+        flex-direction: column; /* Stack sections vertically on mobile */
+        align-items: center; /* Center align items */
+    }
+
+    .footer .section {
+        width: 100%; /* Make sections full width */
+        text-align: center; /* Center align text */
+        margin: 5px 0; /* Add margin between sections */
+    }
+
+    .footer .logo-container {
+        flex-direction: column; /* Stack logo and details */
+        align-items: center; /* Center align */
+        text-align: center; /* Center align text */
+    }
+}
+
+
+/* NAVIGATION BAR */
+/* Adjustments for mobile view 
+______________________________________________________*/
+@media (max-width: 576px) {
+    #carouselExampleSlidesOnly {
+        margin-top: -30px; /* Adjust this value as needed */
+    }
+
+    .carousel-inner {
+        padding-bottom: 10px; /* Adjust if necessary */
+    }
+}
+@media (max-width: 420px) {
+    #carouselExampleSlidesOnly {
+        margin-top: -30px; /* Adjust this value as needed */
+    }
+
+    .carousel-inner {
+        padding-bottom: 10px; /* Adjust if necessary */
+    }
+}
+@media (max-width: 460px) {
+    #carouselExampleSlidesOnly {
+        margin-top: 150px; /* Adjust this value as needed */
+    }
+
+    .carousel-inner {
+        padding-bottom: 10px; /* Adjust if necessary */
+    }
+}
+@media (max-width: 420px) {
+    #carouselExampleSlidesOnly {
+        margin-top: 180px; /* Adjust this value as needed */
+    }
+
+    .carousel-inner {
+        padding-bottom: 10px; /* Adjust if necessary */
+    }
+}
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (max-width: 800px) {
+
+  .timeline .info {
+    display: none;
+  }
+}
+
+
+ /* ITEM LIST 
+ _______________________________________________________*/
+ .column-unique-123 {
+    width: 30%;
+    border-right: 1px solid #ccc;
+    padding-right: 20px;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.column-unique-123 div {
+    padding: 15px; /* Increased padding for better click area */
+    margin-bottom: 10px; /* Space between items */
+    cursor: pointer;
+    background-color: var(--midnight-green); /* Dark green background */
+    color: var(--white); /* White text */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.column-unique-123 div:hover {
+    background-color: var(--yellow); /* Change to a lighter color on hover */
+}
+
+.description-unique-123 {
+    width: 60%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .column-unique-123,
+    .description-unique-123 {
+        width: 100%; /* Full width on smaller screens */
+        border-right: none; /* Remove border for full width */
+    }
+}
+
+@media (min-width: 993px) {
+    .column-unique-123 {
+        width: 30%; /* Keep the original width on larger screens */
+    }
+
+    .description-unique-123 {
+        width: 60%; /* Maintain the description width */
+    }
+}
+
+/* IMAGE GALLERY, HORIZONTAL SCROLL
+ _______________________________________________________*/
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .custom-gallery-wrapper img {
+        width: 150px;
+        max-height: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-gallery-wrapper img {
+        width: 130px;
+        max-height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-gallery-wrapper img {
+        width: 100px;
+        max-height: 80px;
+    }
+
+    .custom-nav-button {
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+}
+
+/* Default style for links */
+.download-link {
+    color: white; /* Default text color */
+    font-weight: 500; /* Prevents sudden bold changes */
+    transition: all 0.3s ease-in-out;
+    display: inline-block; /* Prevents shifting */
+    text-decoration: none !important; /* Removes underline completely */
+}
+
+/* Hover effect (No underline, keeps hover effects) */
+.download-link:hover {
+    color: #FFD700 !important; /* Gold text on hover */
+    text-shadow: 0px 0px 1px #FFD700; /* Mimic bold effect */
+    transform: scale(1.05); /* Slightly enlarges text */
+    text-decoration: none !important; /* Ensures underline never appears */
+}
+
+.map-link {
+    color: white; /* Default text color */
+    font-weight: 500; /* Prevents sudden bold changes */
+    transition: all 0.3s ease-in-out;
+    text-decoration: none; /* Removes underline */
+    display: inline-block; /* Prevents shifting */
+}
+
+/* Hover effect */
+.map-link:hover {
+    color: #FFD700 !important; /* Gold text on hover */
+    text-shadow: 0px 0px 1px #FFD700; /* Mimic bold effect */
+    transform: scale(1.05); /* Slightly enlarges text */
+    text-decoration: none !important; /* Ensures underline never appears */
+}
+
+.email-link {
+    color: white; /* Default text color */
+    font-weight: 500; /* Prevents sudden bold changes */
+    transition: all 0.3s ease-in-out;
+    text-decoration: none; /* Removes underline */
+    display: inline-block; /* Prevents shifting */
+}
+
+/* Hover effect */
+.email-link:hover {
+    color: #FFD700 !important; /* Gold text on hover */
+    text-shadow: 0px 0px 1px #FFD700; /* Mimic bold effect */
+    transform: scale(1.05); /* Slightly enlarges text */
+    text-decoration: none !important; /* Ensures underline never appears */
+}
