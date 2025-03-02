@@ -406,7 +406,7 @@ ______________________________________________________*/
         padding-bottom: 10px; /* Adjust if necessary */
     }
 }
-/* Responsive mobile view index.html */
+
 @media (min-width: 324px) and (max-width: 392px) {
     .carousel-caption {
         display: none; /* Hides the Learn More section */
@@ -417,74 +417,27 @@ ______________________________________________________*/
 }
 @media (min-width: 393px)  {
     #carouselExampleSlidesOnly {
-        margin-top: 200px; /* Adjust the value as needed */
+        margin-top: 240x; /* Adjust the value as needed */
     }
 }
-@media (min-width: 438px) and (max-width: 493px) {
-    #carouselExampleSlidesOnly {
-        margin-top: 168px; /* Adjust the value as needed */
-    }
-    .navbar {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .navbar-toggler {
-        margin-left: auto; /* Push to the right */
-        align-self: center; /* Align vertically */
-    }
-
-    .navbar-brand {
-        flex-grow: 1; /* Allows text to expand */
-        text-align: center;
-    }
-}
-@media (min-width:493px) and (max-width:991px){
-    #carouselExampleSlidesOnly {
-        margin-top: 130px; /* Adjust the value as needed */
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    .navbar {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 25px 20px;
-    }
-
-    .navbar-logo {
-        width: 80px; /* Adjust size for better alignment */
-        height: 80px;
-    }
-
-    .navbar-brand {
-        text-align: left; 
-        margin-left: 10px; /* Space between logo and text */
-    }
-
-    .navbar-brand span {
-        display: block;
-        font-size: 18px;
-        font-weight: bold;
-        line-height: 1.2;
-    }
-
-    .navbar-toggler {
-        margin-left: auto; /* Keeps menu toggle at the right */
-        align-self: center;
-    }
-}
-@media (min-width: 991px) {
-    #carouselExampleSlidesOnly {
-        margin-top: 130px; /* Adjust the value as needed */
-    }
-}
-
 
 
 /* ABOUT US*/
+/* Video */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 /* ACCORDION 
 ______________________________________________________*/
 .aa {
@@ -706,14 +659,16 @@ img {
     padding: 15px; /* Increased padding for better click area */
     margin-bottom: 10px; /* Space between items */
     cursor: pointer;
-    background-color: var(--midnight-green); /* Dark green background */
-    color: var(--white); /* White text */
+    background-color: #004d16; /* Change to your desired background color */
+    color: #ffffff; /* White text */
     border-radius: 5px; /* Rounded corners */
     transition: background-color 0.3s; /* Smooth transition */
+    font-weight: bold; /* Make text bold */
 }
 
 .column-unique-123 div:hover {
-    background-color: var(--yellow); /* Change to a lighter color on hover */
+    background-color: #FFD700; /* Change to a lighter color on hover */
+    color: black;
 }
 
 .description-unique-123 {

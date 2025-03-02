@@ -107,6 +107,53 @@ body {
 
 }
 
+/* mobile responsive image gallery */
+@media (min-width: 324px) and (max-width: 767px) {
+    .image-scroll img {
+        width: 100px; /* Adjust width to match GOHA logo */
+        height: 100px; /* Adjust height to match GOHA logo */
+        object-fit: cover; /* Ensures image is well-fitted */
+        border-radius: 50%; /* Makes the images round like the logo */
+    }
+
+    .image-scroll {
+        display: flex;
+        justify-content: center; /* Centers images like the logo */
+        gap: 10px; /* Adds spacing between images */
+    }
+}
+/* Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Zoomed Image */
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    display: block;
+    margin: auto;
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
 
 /* FOOTER */
 /* Social media links */

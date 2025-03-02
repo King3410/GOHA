@@ -136,6 +136,11 @@
         </div>
     </div>
 </div>
+<!-- Modal for Zooming Images -->
+<div id="zoomModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="zoomedImage">
+</div>
 
 
 <!-- Footer -->
@@ -217,6 +222,32 @@
             
     
     <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const gallery = document.querySelector(".image-scroll");
+    const images = gallery.querySelectorAll("img"); // Only images inside the gallery
+    const modal = document.getElementById("zoomModal");
+    const modalImg = document.getElementById("zoomedImage");
+    const closeBtn = document.querySelector(".close");
+
+    images.forEach(img => {
+        img.addEventListener("click", function () {
+            modal.style.display = "flex";
+            modalImg.src = this.src;
+        });
+    });
+
+    closeBtn.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
+
+    modal.addEventListener("click", function (e) {
+        if (e.target !== modalImg) {
+            modal.style.display = "none";
+        }
+    });
+});
+
+        
         window.addEventListener('scroll', function() {
             const navbar = document.getElementById('navbar');
             
