@@ -27,6 +27,17 @@ body {
 }
 
 /* Navbar brand and link styles */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+/* menu toggle bar */
+.navbar-toggler:focus, 
+.navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+    border-color: transparent; /* Ensures no border appears */
+}
+
 .navbar-brand, .nav-link {
     color: white !important; /* White text */
 }
@@ -357,7 +368,6 @@ body {
     }
 }
 
-/* NAVIGATION BAR */
 /* Adjustments for mobile view 
 ______________________________________________________*/
 @media (max-width: 576px) {
@@ -396,6 +406,83 @@ ______________________________________________________*/
         padding-bottom: 10px; /* Adjust if necessary */
     }
 }
+/* Responsive mobile view index.html */
+@media (min-width: 324px) and (max-width: 392px) {
+    .carousel-caption {
+        display: none; /* Hides the Learn More section */
+    }
+    #carouselExampleSlidesOnly {
+        margin-top:240px; /* Adjust the value as needed */
+    }
+}
+@media (min-width: 393px)  {
+    #carouselExampleSlidesOnly {
+        margin-top: 200px; /* Adjust the value as needed */
+    }
+}
+@media (min-width: 438px) and (max-width: 493px) {
+    #carouselExampleSlidesOnly {
+        margin-top: 168px; /* Adjust the value as needed */
+    }
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar-toggler {
+        margin-left: auto; /* Push to the right */
+        align-self: center; /* Align vertically */
+    }
+
+    .navbar-brand {
+        flex-grow: 1; /* Allows text to expand */
+        text-align: center;
+    }
+}
+@media (min-width:493px) and (max-width:991px){
+    #carouselExampleSlidesOnly {
+        margin-top: 130px; /* Adjust the value as needed */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px 20px;
+    }
+
+    .navbar-logo {
+        width: 80px; /* Adjust size for better alignment */
+        height: 80px;
+    }
+
+    .navbar-brand {
+        text-align: left; 
+        margin-left: 10px; /* Space between logo and text */
+    }
+
+    .navbar-brand span {
+        display: block;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.2;
+    }
+
+    .navbar-toggler {
+        margin-left: auto; /* Keeps menu toggle at the right */
+        align-self: center;
+    }
+}
+@media (min-width: 991px) {
+    #carouselExampleSlidesOnly {
+        margin-top: 130px; /* Adjust the value as needed */
+    }
+}
+
+
 
 /* ABOUT US*/
 /* ACCORDION 
