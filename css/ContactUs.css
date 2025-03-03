@@ -249,7 +249,15 @@ ______________________________________________________*/
     display: none;
   }
 }
+@media (min-width: 438px) and (max-width: 493px) {
+    .map-container {
+        margin-top: 159px; /* Moves carousel down */
+    }
 
+    .navbar-toggler {
+        margin-top: 20px; /* Adjust this value as needed */
+    }
+}
 
  /* ITEM LIST 
  _______________________________________________________*/

@@ -541,3 +541,68 @@ ______________________________________________________*/
     transform: scale(1.05); /* Slightly enlarges text */
     text-decoration: none !important; /* Ensures underline never appears */
 }
+
+/* Responsive main caorusel */
+@media (min-width: 300px) and (max-width: 399px) {
+    .carousel {
+        margin-top: 260px; /* Adjust as needed */
+        width: 100%; /* Ensures it takes full width */
+        height: auto; /* Adjusts height automatically */
+    }
+
+    .carousel img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 443px) {
+    .carousel {
+        margin-top: 220px; /* Adjust as needed */
+        width: 100%; /* Ensures it takes full width */
+        height: auto; /* Adjusts height automatically */
+    }
+
+    .carousel img {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (min-width: 444px) and (max-width: 499px) {
+    .carousel-inner {
+        margin-top: 20px; /* Moves carousel down */
+    }
+
+    .navbar-toggler {
+        margin-top: 20px; /* Adjust this value as needed */
+    }
+}
+
+@media (min-width: 444px) and (max-width: 499px) {
+    .carousel {
+        margin-top: 190px; /* Adjust as needed */
+        width: 100%; /* Ensures it takes full width */
+        height: auto; /* Adjusts height automatically */
+    }
+
+    .carousel img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 500px)   {
+    .carousel {
+        margin-top: 150px; /* Adjust as needed */
+        width: 100%; /* Ensures it takes full width */
+        height: auto; /* Adjusts height automatically */
+    }
+
+    .carousel img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/* Zoom modal */

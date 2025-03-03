@@ -407,7 +407,7 @@ ______________________________________________________*/
     }
 }
 
-@media (min-width: 324px) and (max-width: 392px) {
+@media (min-width: 324px) and (max-width: 393px) {
     .carousel-caption {
         display: none; /* Hides the Learn More section */
     }
@@ -421,6 +421,26 @@ ______________________________________________________*/
     }
 }
 
+@media (min-width: 394px) and (max-width: 437px) {
+    #carouselExampleSlidesOnly{
+        margin-top: 200px; /* Adjust the value as needed */
+    }
+}
+@media (min-width: 438px) and (max-width: 493px) {
+    #carouselExampleSlidesOnly {
+        margin-top: 190px; /* Moves carousel down */
+    }
+
+    .navbar-toggler {
+        margin-top: 20px; /* Adjust this value as needed */
+    }
+}
+
+@media (min-width: 494px) and (max-width: 576px) {
+    #carouselExampleSlidesOnly{
+        margin-top: 130px; /* Adjust the value as needed */
+    }
+}
 
 /* ABOUT US*/
 /* Video */
