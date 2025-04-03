@@ -52,7 +52,8 @@
     <div class="row mt-4">
         <div class="col-md-6">
             <a href="Elementary.html"  class="faq-link">
-                <div class="faq-card">
+                <div class="faq-card" id="elementary-card">
+                    <!-- Image for Elementary -->
                     <img src="https://images.contentstack.io/v3/assets/blta94287f64af734dc/bltfb7fee7ee635f06b/6799cd9f21aebd35b277df73/shutterstock_2198668123_DU.jpg?auto=webp&format=pjpg&quality=80&width=640&height=640&fit=crop&crop=640:480,smart" 
                          alt="Elementary" class="img-fluid">
                     <div class="overlay">
@@ -82,7 +83,7 @@
     
     <div class="row align-items-start">
         <!-- Application Process Section -->
-        <div class="col-md-6">
+        <div class="col-md-6" style="margin-bottom: 10px;">
             <div class="bg-white p-4 rounded shadow text-center">
                 <h3 class="mb-3">Application Process</h3>
                 <ol class="text-start mx-auto" style="max-width: 400px;">
@@ -274,35 +275,26 @@
 
       <!-- New Section: Tutoring and Remedial Class -->
       <div class="container">
-        <div class="row">
-            <!-- First Card -->
-            <div class="col-md-4">
-                <div class="unique-card">
-                    <img src="../images/tutor.jpg" alt="Achievement 1" class="unique-image">
-                    <div class="unique-overlay">
-                        <div>Download Here: Teacher's Profile</div>
-                        <a href="../downloads/teacher_profile.pdf" class="btn btn-primary" download>Download</a>
-                    </div>
+        <div class="unique-row">
+            <div class="unique-card" id="tutor-card">
+                <img src="../images/tutor.jpg" alt="Teacher's Profile" class="unique-image">
+                <div class="unique-overlay">
+                    <div>Download Here: Teacher's Profile</div>
+                    <a href="../downloads/teacher_profile.pdf" class="btn btn-primary" download>Download</a>
                 </div>
             </div>
-            <!-- Second Card -->
-            <div class="col-md-4">
-                <div class="unique-card">
-                    <img src="../images/assess.jpg" alt="Achievement 2" class="unique-image">
-                    <div class="unique-overlay">
-                        <div>Download Here: Assessment Overview</div>
-                        <a href="../downloads/assessment_overview.pdf" class="btn btn-primary" download>Download</a>
-                    </div>
+            <div class="unique-card" id="assessment">
+                <img src="../images/assess.jpg" alt="Assessment Overview" class="unique-image">
+                <div class="unique-overlay">
+                    <div>Download Here: Assessment Overview</div>
+                    <a href="../downloads/assessment_overview.pdf" class="btn btn-primary" download>Download</a>
                 </div>
             </div>
-            <!-- Third Card -->
-            <div class="col-md-4">
-                <div class="unique-card">
-                    <img src="../images/tutor.jpg" alt="Achievement 3" class="unique-image">
-                    <div class="unique-overlay">
-                        <div>Download Here: Assessment Overview</div>
-                        <a href="../downloads/assessment_overview.pdf" class="btn btn-primary" download>Download</a>
-                    </div>
+            <div class="unique-card" id="others">
+                <img src="../images/tutor.jpg" alt="Other Resources" class="unique-image">
+                <div class="unique-overlay">
+                    <div>Download Here: Other Resources</div>
+                    <a href="../downloads/assessment_overview.pdf" class="btn btn-primary" download>Download</a>
                 </div>
             </div>
         </div>

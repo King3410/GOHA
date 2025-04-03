@@ -357,13 +357,8 @@ ______________________________________________________*/
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    transition: opacity 0.3s;
+    opacity: 1; /* Always visible */
     height: 50%;
-}
-
-.faq-card:hover .overlay {
-    opacity: 1; /* Show overlay on hover */
 }
 
 /* Ensure text inside the overlay is white */
@@ -373,29 +368,88 @@ ______________________________________________________*/
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
+@media (min-width: 320px){
+     #preschool-card{
+        margin-bottom: -20px;
+        top: 50px;
+        position: relative;
+    }
+}
+@media (min-width: 320px) and (max-width: 399px){
+     #preschool-card{
+        margin-bottom: -20px;
+        top: 50px;
+        position: relative;
+    }
+}
+@media (min-width: 500px) {
+     #preschool-card{
+        margin-bottom: -50px;
+        top: -20px;
+        position: relative;
+    }
+}
+
 /* New Section */
 .container {
     margin-top: 20px;
     padding: 0 15px;
 }
 
-/* Media Query for Mobile View */
+.unique-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
+    gap: 20px;
+}
+
+.unique-card {
+    position: relative;
+    width: calc(33.33% - 20px); /* Equal width for 3 cards, minus gap */
+    max-width: none; /* Remove max-width to allow equal distribution */
+    height: auto;
+    overflow: hidden;
+}
+
+.unique-image {
+    width: 100%;
+    height: auto;
+    border-radius: 11px;
+    display: block; /*removes extra spacing below the image*/
+}
+
+.unique-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.unique-card:hover .unique-overlay,
+.unique-card:focus-within .unique-overlay,
+.unique-card:active .unique-overlay {
+    opacity: 1;
+}
+
 @media (max-width: 768px) {
-    .faq-card {
-        height: 300px; /* Adjust height for mobile if needed */
+    .unique-overlay {
+        opacity: 1; /* Make overlay always visible */
     }
+}
 
-    .overlay {
-        opacity: 1; /* Make overlay always visible on mobile */
-        height: 100%; /* Ensure the overlay covers the entire card */
-    }
-
-    .overlay h3 {
-        font-size: 24px; /* Ensure text size is appropriate */
-        text-align: center; /* Center text */
-        color: white !important; /* Ensure text is white */
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Maintain shadow for readability */
-    }
+.btn {
+    margin-top: 10px;
+    color: white;
 }
 
 /* Mobile Responsiveness */
@@ -410,12 +464,6 @@ ______________________________________________________*/
     }
 }
 
-/* FAQ's */
-.custom-img {
-    max-width: 650px; /* Adjust width as needed */
-    max-height: 600px; /* Adjust height as needed */
-    object-fit: cover; /* Ensures the image scales properly */
-}
 
 /* Default style for links */
 .download-link {

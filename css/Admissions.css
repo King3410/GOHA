@@ -366,22 +366,8 @@ ______________________________________________________*/
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s;
+    opacity: 1; /* Always visible */
     height: 50%;
-}
-
-.faq-card:hover .overlay,
-.faq-card:focus-within .overlay,
-.faq-card:active .overlay { /* Added active state for mobile */
-    opacity: 1; /* Show overlay on hover or focus */
-}
-
-/* Always show overlay on mobile */
-@media (max-width: 768px) {
-    .overlay {
-        opacity: 1; /* Make overlay always visible */
-    }
 }
 
 .overlay h3 {
@@ -389,6 +375,34 @@ ______________________________________________________*/
     color: white !important; /* Force white text */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
+
+@media (min-width: 320px){
+    #elementary-card{
+        margin-bottom: -20px;
+        top: 50px;
+        position: relative;
+    }
+}
+@media (min-width: 320px) and (max-width: 399px){
+    #elementary-card{
+        margin-bottom: -20px;
+        top: 50px;
+        position: relative;
+    }
+}
+@media (min-width: 500px) {
+    #preschool-card{
+    top: -10px;
+        position: relative;
+    }
+    #elementary-card{
+        margin-bottom: -50px;
+        top: -20px;
+        position: relative;
+    }
+}
+
+/* end of preschool */
 
 /* New Section */
 .container {
@@ -399,22 +413,23 @@ ______________________________________________________*/
 .unique-row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; /* Center items horizontally */
     gap: 20px;
 }
 
 .unique-card {
     position: relative;
-    width: 100%; /* Responsive width */
-    max-width: 480px; /* Limit maximum width */
-    height: auto; /* Auto height */
+    width: calc(33.33% - 20px); /* Equal width for 3 cards, minus gap */
+    max-width: none; /* Remove max-width to allow equal distribution */
+    height: auto;
     overflow: hidden;
 }
 
 .unique-image {
-    width: 100%; /* Responsive image */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    height: auto;
     border-radius: 11px;
+    display: block; /*removes extra spacing below the image*/
 }
 
 .unique-overlay {
@@ -427,20 +442,19 @@ ______________________________________________________*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     text-align: center;
-    opacity: 0; /* Initially hidden */
+    opacity: 0;
     transition: opacity 0.3s;
 }
 
 .unique-card:hover .unique-overlay,
 .unique-card:focus-within .unique-overlay,
-.unique-card:active .unique-overlay { /* Added active state for mobile */
-    opacity: 1; /* Show overlay on hover or focus */
+.unique-card:active .unique-overlay {
+    opacity: 1;
 }
 
-/* Always show unique overlay on mobile */
 @media (max-width: 768px) {
     .unique-overlay {
         opacity: 1; /* Make overlay always visible */
@@ -449,7 +463,7 @@ ______________________________________________________*/
 
 .btn {
     margin-top: 10px;
-    color: white; /* Button text color */
+    color: white;
 }
 
 /* Mobile Responsiveness */
@@ -464,14 +478,34 @@ ______________________________________________________*/
     }
 }
 
-
-
+/* Always show unique overlay on mobile */
+/* @media (max-width: 320px) {
+    #assessment-card {
+        padding: 0 10px; /* Adjust padding for smaller screens 
+        gap: 10px;  Adjust gap between cards 
+    
+} */
 
 /* FAQ's */
 .custom-img {
-    max-width: 650px; /* Adjust width as needed */
-    max-height: 600px; /* Adjust height as needed */
-    object-fit: cover; /* Ensures the image scales properly */
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Prevents the image from exceeding its parent's width */
+}
+@media only screen and (min-width: 320px) {
+    .custom-img {
+        /* Add any additional styles you want to apply starting from this width */
+        /* For example, you could adjust the height or add other effects */
+        height: auto; /* Keeps the aspect ratio */
+        padding-bottom: 20px;
+    }
+}
+@media (min-width:768px) {
+   .custom-img{
+    width: 100%; /* Ensure it fills the parent container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Prevent exceeding parent width */
+   }
 }
 
 /* Default style for links */
