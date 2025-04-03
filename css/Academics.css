@@ -605,4 +605,39 @@ ______________________________________________________*/
 }
 
 
-/* Zoom modal */
+/* dynamically adjust the image*/
+    @media (max-width: 768px) {
+        .btn {
+            padding: 5px 10px; /* Reduce button size */
+            font-size: 12px; /* Reduce text size */
+        }
+
+        img {
+            max-width: 100%; /* Make images take full space */
+            max-height: 350px; /* Increase max height for better visibility */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .btn {
+            padding: 3px 8px; /* Further reduce button size */
+            font-size: 10px; /* Further reduce font size */
+        }
+
+        img {
+            max-height: 400px; /* Further increase image height */
+        }
+    }
+    .custom-img {
+        max-height: 300px; /* Fixed height */
+        width: auto; /* Maintain aspect ratio */
+        border-radius: 5px;
+        object-fit: cover; /* Crop the image to fit */
+        flex: 0 0 auto; /* Prevent images from shrinking */
+    }
+
+    @media (min-width: 768px) {
+        .custom-img {
+            width: 100%; /* Allow images to fill the space on larger screens */
+        }
+    }

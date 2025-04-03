@@ -81,39 +81,45 @@
 <div class="container">
     <h2 class="text-center">Students Achievements</h2>
     
-    <!-- First Row with Second Row Nested Inside -->
-    <div class="d-flex align-items-center">
-        <button class="btn btn-primary me-2" id="scrollLeft1">&#10094;</button>
-        <div class="image-scroll d-flex overflow-auto" id="imageScroll1">
-            <div class="d-flex flex-column">
-                <!-- First Row Images -->
-                <div class="d-flex">
-                    <img src="https://tinajerosnhs.depedmalaboncity.ph/wp-content/uploads/2020/06/103535720_329184328087699_3211315604116894437_n.jpg" alt="Champion 1" class="img-fluid" style="max-height: 300px; border-radius: 11px;">
-                    <img src="https://tinajerosnhs.depedmalaboncity.ph/wp-content/uploads/2020/06/103053778_262913035133198_3628302837102051675_n.jpg" alt="Champion 2" class="img-fluid" style="max-height: 300px; border-radius: 11px;">
-                    <img src="https://tinajerosnhs.depedmalaboncity.ph/wp-content/uploads/2020/06/102880868_576354313288506_841578081790406814_n.jpg" alt="Champion 3" class="img-fluid" style="max-height: 300px; border-radius: 11px;">
-                    <img src="https://tinajerosnhs.depedmalaboncity.ph/wp-content/uploads/2020/06/103535720_329184328087699_3211315604116894437_n.jpg" alt="Champion 1" class="img-fluid" style="max-height: 300px; border-radius: 11px;">
-                    <img src="https://tinajerosnhs.depedmalaboncity.ph/wp-content/uploads/2020/06/103053778_262913035133198_3628302837102051675_n.jpg" alt="Champion 2" class="img-fluid" style="max-height: 300px; border-radius: 11px;">
-                    <img src="https://tinajerosnhs.depedmalaboncity.ph/wp-content/uploads/2020/06/102880868_576354313288506_841578081790406814_n.jpg" alt="Champion 3" class="img-fluid" style="max-height: 300px; border-radius: 11px;">
-                    <img src="https://tinajerosnhs.depedmalaboncity.ph/wp-content/uploads/2020/06/103535720_329184328087699_3211315604116894437_n.jpg" alt="Champion 1" class="img-fluid" style="max-height: 300px; border-radius: 11px;">
-                    <img src="https://tinajerosnhs.depedmalaboncity.ph/wp-content/uploads/2020/06/103053778_262913035133198_3628302837102051675_n.jpg" alt="Champion 2" class="img-fluid" style="max-height: 300px; border-radius: 11px;">
-                    <img src="https://tinajerosnhs.depedmalaboncity.ph/wp-content/uploads/2020/06/102880868_576354313288506_841578081790406814_n.jpg" alt="Champion 3" class="img-fluid" style="max-height: 300px; border-radius: 11px;">
-                </div>
-                <!-- Nested Second Row Images -->
-                <div class="d-flex mt-2" id="imageScroll2">
-                    <img src="https://tinajerosnhs.depedmalaboncity.ph/wp-content/uploads/2020/06/103535720_329184328087699_3211315604116894437_n.jpg" alt="Champion 1" class="img-fluid" style="max-height: 300px; border-radius: 11px;">
-                    <img src="https://tinajerosnhs.depedmalaboncity.ph/wp-content/uploads/2020/06/103053778_262913035133198_3628302837102051675_n.jpg" alt="Champion 2" class="img-fluid" style="max-height: 300px; border-radius: 11px;">
-                    <img src="https://tinajerosnhs.depedmalaboncity.ph/wp-content/uploads/2020/06/102880868_576354313288506_841578081790406814_n.jpg" alt="Champion 3" class="img-fluid" style="max-height: 300px; border-radius: 11px;">
-                    <img src="https://tinajerosnhs.depedmalaboncity.ph/wp-content/uploads/2020/06/103535720_329184328087699_3211315604116894437_n.jpg" alt="Champion 1" class="img-fluid" style="max-height: 300px; border-radius: 11px;">
-                    <img src="https://tinajerosnhs.depedmalaboncity.ph/wp-content/uploads/2020/06/103053778_262913035133198_3628302837102051675_n.jpg" alt="Champion 2" class="img-fluid" style="max-height: 300px; border-radius: 11px;">
-                    <img src="https://tinajerosnhs.depedmalaboncity.ph/wp-content/uploads/2020/06/102880868_576354313288506_841578081790406814_n.jpg" alt="Champion 3" class="img-fluid" style="max-height: 300px; border-radius: 11px;">
-                    <img src="https://tinajerosnhs.depedmalaboncity.ph/wp-content/uploads/2020/06/103535720_329184328087699_3211315604116894437_n.jpg" alt="Champion 1" class="img-fluid" style="max-height: 300px; border-radius: 11px;">
-                    <img src="https://tinajerosnhs.depedmalaboncity.ph/wp-content/uploads/2020/06/103053778_262913035133198_3628302837102051675_n.jpg" alt="Champion 2" class="img-fluid" style="max-height: 300px; border-radius: 11px;">
-                    <img src="https://tinajerosnhs.depedmalaboncity.ph/wp-content/uploads/2020/06/102880868_576354313288506_841578081790406814_n.jpg" alt="Champion 3" class="img-fluid" style="max-height: 300px; border-radius: 11px;">
-                </div>
+<!-- First Row with Second Row Nested Inside -->
+<div class="d-flex align-items-center" style="display: flex; align-items: center; overflow: hidden; width: 100%;">
+    <button class="btn btn-primary me-2" id="scrollLeft1" style="margin-right: 8px;">&#10094;</button>
+    <div class="image-scroll d-flex overflow-auto" id="imageScroll1" style="display: flex; overflow-x: auto; scroll-behavior: smooth; max-width: 90vw;">
+        <div class="d-flex flex-column" style="display: flex; flex-direction: column;">
+            <!-- First Row Images -->
+            <div class="d-flex image-container" style="display: flex; flex-wrap: nowrap;">
+                <img src="https://tinajerosnhs.depedmalaboncity.ph/wp-content/uploads/2020/06/103535720_329184328087699_3211315604116894437_n.jpg" 
+                    alt="Champion 1" style="width: 100%; max-height: 300px; border-radius: 5px; object-fit: cover;">
+                <img src="https://tinajerosnhs.depedmalaboncity.ph/wp-content/uploads/2020/06/103053778_262913035133198_3628302837102051675_n.jpg" 
+                    alt="Champion 2" style="width: 100%; max-height: 300px; border-radius: 5px; object-fit: cover;">
+                <img src="https://tinajerosnhs.depedmalaboncity.ph/wp-content/uploads/2020/06/102880868_576354313288506_841578081790406814_n.jpg" 
+                    alt="Champion 3" style="width: 100%; max-height: 300px; border-radius: 5px; object-fit: cover;">
+                <img src="https://tinajerosnhs.depedmalaboncity.ph/wp-content/uploads/2020/06/103535720_329184328087699_3211315604116894437_n.jpg" 
+                    alt="Champion 1" style="width: 100%; max-height: 300px; border-radius: 5px; object-fit: cover;">
+                <img src="https://tinajerosnhs.depedmalaboncity.ph/wp-content/uploads/2020/06/103053778_262913035133198_3628302837102051675_n.jpg" 
+                    alt="Champion 2" style="width: 100%; max-height: 300px; border-radius: 5px; object-fit: cover;">
+                <img src="https://tinajerosnhs.depedmalaboncity.ph/wp-content/uploads/2020/06/102880868_576354313288506_841578081790406814_n.jpg" 
+                    alt="Champion 3" style="width: 100%; max-height: 300px; border-radius: 5px; object-fit: cover;">
+            </div>
+            <!-- Nested Second Row Images -->
+            <div class="d-flex mt-2 image-container" id="imageScroll2" style="display: flex; flex-wrap: nowrap; margin-top: 8px;">
+                <img src="https://tinajerosnhs.depedmalaboncity.ph/wp-content/uploads/2020/06/103535720_329184328087699_3211315604116894437_n.jpg" 
+                    alt="Champion 1" style="width: 100%; max-height: 300px; border-radius: 5px; object-fit: cover;">
+                <img src="https://tinajerosnhs.depedmalaboncity.ph/wp-content/uploads/2020/06/103053778_262913035133198_3628302837102051675_n.jpg" 
+                    alt="Champion 2" style="width: 100%; max-height: 300px; border-radius: 5px; object-fit: cover;">
+                <img src="https://tinajerosnhs.depedmalaboncity.ph/wp-content/uploads/2020/06/102880868_576354313288506_841578081790406814_n.jpg" 
+                    alt="Champion 3" style="width: 100%; max-height: 300px; border-radius: 5px; object-fit: cover;">
+                <img src="https://tinajerosnhs.depedmalaboncity.ph/wp-content/uploads/2020/06/103535720_329184328087699_3211315604116894437_n.jpg" 
+                    alt="Champion 1" style="width: 100%; max-height: 300px; border-radius: 5px; object-fit: cover;">
+                <img src="https://tinajerosnhs.depedmalaboncity.ph/wp-content/uploads/2020/06/103053778_262913035133198_3628302837102051675_n.jpg" 
+                    alt="Champion 2" style="width: 100%; max-height: 300px; border-radius: 5px; object-fit: cover;">
+                <img src="https://tinajerosnhs.depedmalaboncity.ph/wp-content/uploads/2020/06/102880868_576354313288506_841578081790406814_n.jpg" 
+                    alt="Champion 3" style="width: 100%; max-height: 300px; border-radius: 5px; object-fit: cover;">
             </div>
         </div>
-        <button class="btn btn-primary ms-2" id="scrollRight1">&#10095;</button>
     </div>
+    <button class="btn btn-primary ms-2" id="scrollRight1" style="margin-left: 8px;">&#10095;</button>
+</div>
 </div>
 
 
@@ -222,6 +228,26 @@
             
     
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    // Smooth scrolling for the first row
+    document.getElementById('scrollLeft1').addEventListener('click', function() {
+        document.getElementById('imageScroll1').scrollBy({ left: -150, behavior: 'smooth' });
+    });
+
+    document.getElementById('scrollRight1').addEventListener('click', function() {
+        document.getElementById('imageScroll1').scrollBy({ left: 150, behavior: 'smooth' });
+    });
+
+    // Smooth scrolling for the nested second row
+    document.getElementById('scrollLeft2').addEventListener('click', function() {
+        document.getElementById('imageScroll2').scrollBy({ left: -150, behavior: 'smooth' });
+    });
+
+    document.getElementById('scrollRight2').addEventListener('click', function() {
+        document.getElementById('imageScroll2').scrollBy({ left: 150, behavior: 'smooth' });
+    });
+});
+
 document.addEventListener("DOMContentLoaded", function () {
     const gallery = document.querySelector(".image-scroll");
     const images = gallery.querySelectorAll("img"); // Only images inside the gallery
