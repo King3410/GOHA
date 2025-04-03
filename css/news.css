@@ -274,6 +274,44 @@ ______________________________________________________*/
     }
 }
 
+@media (min-width: 394px) and (max-width: 437px) {
+    .carousel-inner {
+       margin-top: 200px;
+    }
+    #carouselExampleSlidesOnly {
+        margin-top: -90px; /* Adjust this value to move it higher */
+    }
+    
+}
+
+@media (min-width: 438px) and (max-width: 460px) {
+    .carousel-inner {
+       margin-top: 200px;
+    }
+    #carouselExampleSlidesOnly {
+        margin-top: -90px; /* Adjust this value to move it higher */
+    }
+    
+}
+@media (min-width: 461px) and (max-width: 493px) {
+    .carousel-inner {
+       margin-top: 200px;
+    }
+    #carouselExampleSlidesOnly {
+        margin-top: -90px; /* Adjust this value to move it higher */
+    }
+    
+}
+
+@media (min-width: 494px){
+    #carouselExampleSlidesOnly {
+        margin-top: -50px; /* Adjust this value to move it higher */
+    }
+    
+    
+}
+
+
 
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
