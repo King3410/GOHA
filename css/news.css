@@ -29,6 +29,9 @@ body {
     box-shadow: none;
     border-color: transparent; /* Ensures no border appears */
 }
+.navbar-toggler {
+    margin-top: 20px; /* Space below the logo and brand */
+}
 
 .navbar {
     background-color: #007D0C; /* Green background */
